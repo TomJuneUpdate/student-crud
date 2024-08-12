@@ -13,9 +13,9 @@ import lombok.Setter;
 @Builder
 public class StudentDTO {
     private String fullName;
-    private int age;
+    private Integer age;
     private String phoneNumber;
     private String address;
-    private int facebookAccountId;
-    private int googleAccountId;
+    private Integer facebookAccountId;
+    private Integer googleAccountId;
 }

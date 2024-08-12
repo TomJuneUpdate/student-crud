@@ -29,7 +29,7 @@ public class Student extends BaseEntity{
     private String fullName;
 
     @Column(name = "AGE")
-    private int age;
+    private Integer age;
 
     @Column(name = "PHONE_NUMBER", nullable = false, length = 10)
     private String phoneNumber;
@@ -38,8 +38,8 @@ public class Student extends BaseEntity{
     private String address;
 
     @Column(name = "FACEBOOK_ACCOUNT_ID")
-    private int facebookAccountId;
+    private Integer facebookAccountId;
 
     @Column(name = "GOOGLE_ACCOUNT_ID")
-    private int googleAccountId;
+    private Integer googleAccountId;
 }
