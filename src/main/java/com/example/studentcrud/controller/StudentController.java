@@ -36,6 +36,7 @@ public class StudentController {
                 .toList();
         return ResponseEntity.ok(students);
     }
+
     // Lấy thông tin học sinh theo ID
     @GetMapping("/{id}")
     public ResponseEntity<StudentDTO> getStudentById(@PathVariable Long id) {
