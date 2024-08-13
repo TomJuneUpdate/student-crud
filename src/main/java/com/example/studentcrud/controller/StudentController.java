@@ -1,7 +1,7 @@
 package com.example.studentcrud.controller;
 
 import com.example.studentcrud.dto.StudentDTO;
-import com.example.studentcrud.service.impl.StudentServiceImpl;
+import com.example.studentcrud.service.StudentService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -19,7 +19,7 @@ import java.util.List;
 @RequestMapping("/api/v1/student")
 @AllArgsConstructor
 public class StudentController {
-    private final StudentServiceImpl studentService;
+    private final StudentService studentService;
 
     // Lấy tất cả học sinh
     @GetMapping("/getAllStudent")
